@@ -68,7 +68,8 @@ def compute_distance(points: List[Points] = [{"x": 0, "y": 0}, {"x": 0, "y": 0}]
         # mettre les valeurs dans 2 variables p1&p2
         p1 = points[i]
         p2 = points[i+1]
-    distance = sqrt((p2.x - p1.x)**2 + (p2.y - p1.y)**2)
+        distance += sqrt((p2.x - p1.x)**2 + (p2.y - p1.y)**2)
+    
 
     return {"resultat" : distance}
 
